@@ -1,0 +1,27 @@
+
+*** These modified files were found in JOE when it aborted on Thu Sep  5 19:07:10 2013
+*** JOE was aborted by UNIX signal 1
+
+*** File 'main.cpp'
+#include <iostream>
+#include "functions.h"
+
+int main(){
+    print_hello();
+    cout << endl;
+    cout << "The factorial of 5 is " << factorial(5) ;
+    return 0;
+}
+
+*** File '(Unnamed)'
+.bashrc
+/home/ehsan/.bashrc
+/home/ehsan/.bashrc
+/home/ehsan/.bashrc
+/home/ehsan/.bashrc
+/home/ehsan/.bashrc
+/home/ehsan/.bashrc
+Assignment_01.c
+main.cpp
+main.cpp
+main.cpp

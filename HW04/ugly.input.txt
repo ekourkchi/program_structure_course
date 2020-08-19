@@ -1,0 +1,48 @@
+
+# writing function can handle it and read it as long as  
+# it finds the proper keywords
+# The list of the bank customers. 
+ 
+# Keywords: (NOT case-sensitive, maybe followed by ":" or single or multiple spaces)
+# Name
+# AccountNo
+# balance
+#
+# Please note that in this version each line of the input text cannot be bigger than 2000 charachter size.
+# Otherwise the program crashes.
+#
+
+ Name: Ehsan
+ AccountNo: 34
+ Balance 12000 $ // huge amount of money
+ 
+ Name: Sean
+ 
+  AccountNo: 34
+ 
+balAnce:32
+// The list of customers ...... 
+ 
+ Name: Foo
+ 
+ accountno 34
+ Balance:    43.3    
+
+% Whatever which is in not in a right format
+% will be ignored ....
+
+ Name: Ehsan
+ AccountNo: 34
+ Balance 12000 $ // huge amount of money
+ 
+  NamE            Andrew
+ 
+  AccountNo: 12360
+ 
+balance 34.4  
+
+
+% This file looks ugly but can be iported by my function
+
+Cheers,
+Ehsan

@@ -1,0 +1,26 @@
+# The list of the bank costomers
+
+ Name: Ehsan
+ AccountNo: 34
+ Balance 12000 
+ 
+ Name: Sean
+ AccountNo: 34
+ BalAnce: 32
+ 
+ Name: Foo
+ AccountNo: 34
+ Balance: 43.3    
+
+ Name: Ehsan
+ AccountNo: 34
+ Balance 12000 
+ 
+ Name: Andrew
+ AccountNo: 12360
+ Balance: 1360 
+
+ Name: Mike
+ AccountNo: 360
+ Balance: 34.5
+    

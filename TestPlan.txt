@@ -1,0 +1,563 @@
+/************************************/
+test 1: testing for wrong argument
+
+$ ./project1 wrong
+Program shows information how to get the information about the possbile arguments.
+
+Example: 
+Bad opperands
+Try '--help' flag for more information.
+
+/************************************/
+test 2: Testing --help argument
+
+$ ./project1 --helps
+Program shows a list of possible arguments.
+
+Example:
+
+ -d, debug
+   In this mode, the name of all functions
+   and the passed parameters will be displayed.
+
+ -v, --version
+   output version information and exit
+
+ -h, --help
+   display this help and exit
+
+/************************************/
+test 3: Start the program by typing the program name with no arguments
+
+$ ./project1 
+A memu list would be displayed including the number of available records based 
+on waht has been imported from te memory file. Whenever either no input file is available or 
+the list is empty, the "The list is empty" message will be displayed.
+Since we have just started to fill in the list, "The list is empty" would be displayed at the 
+first time we start using the program.
+
+/************************************/
+test 4: The add option is chosen and the neccessary fileds are entered by user.
+
+Entered values are:
+Name: Ehsan Kourkchi
+Address: 2680 Woodlawn Dr
+Honolulu, HI 96822
+Yearofbirth: 1980
+Telno: (808) 220 6795
+
+/************************************/
+test 5: Program asks whether the input information is correct by displaying the information
+and displaying the confirmation menu.
+
+
+/************************************/
+test 6: Confirm that the entered information is correct. 
+The message "The record is added" would
+be displayed and user promps to the main menu again.
+
+/************************************/
+test 7: The option "Print all contacts" would be chosen.
+The list containing the jsut entered field must be displayed followed by the main menu 
+waiting for user for the next commant.
+The displayed field must be exactly the same as what have been entered as the first field.
+
+/************************************/
+test 8: The option "print a contact" would be chosen.
+Here, user is asked to enter the name of the contact to be displayed. 
+
+Enter "Peter" as the name which does not exist in the lsit.
+Program warns the user that "the contact is not available in the list" and after that shows
+the main menu asking for another command.
+
+/************************************/
+test 9: The option "print a contact" would be chosen again.
+
+Enter "Ehsan Kourkchi" which is the same as the first contact that already added into the list
+as its first field.
+
+Program searches throug the list, finds the field and displays the information as
+
+Name: Ehsan Kourkchi
+Address: 2680 Woodlawn Dr
+Honolulu, HI 96822
+Yearofbirth: 1980
+Telno: (808) 220 6795
+
+After that program displays the main menu and waiting for user to enter another command.
+
+/************************************/
+test 10: The "modifying a contact" would be chosen in this step.
+
+Program asks user to enter the contact name for which the data would be modified.
+Enter "John" as a contact which is not available but user wants to modify it.
+
+Program show a warning message for user indicating the "There is no contact with no such name
+in this list". Then program displays the main menu and asks user for the next operation.
+
+/************************************/
+test 11: The "modifying a contact" would be chosen again.
+
+This time "Ehsan Kourkchi" would be entered as the field name user wants to modify.
+
+Program asks user to enter all new fields. This new information will be entered.
+
+Name: John Ninja
+Address: 1295 Woodlawn Dr
+Hilo, HI 96822
+Yearofbirth: 1980
+Telno: (808) 630 3685
+
+
+Once user is done with the entered information, the 
+"Contact detaild was modified" message would be displayed.
+
+Main menu will be displayed waiting for user for next operation.
+
+/************************************/
+test 12: The option "Print all contacts" would be chosen to make sure that the record is actulll
+modified. 
+
+The displayed modified field must be:
+Name: John Ninja
+Address: 1295 Woodlawn Dr
+Hilo, HI 96822
+Yearofbirth: 1980
+Telno: (808) 630 3685
+
+Main menu will be displayed waiting for user for next operation.
+
+
+/************************************/
+test 13: "Remove a contact" option will be chosen in this step.
+
+The name "Evan" will be entered as the a non-existing wrong name. 
+
+Program return an warning telling user that "There is no record with such name."
+
+The main menu would be displayed waiting for user to enter a new command.
+
+/************************************/
+test 14: "Remove a contact" option will be chosen again in this step.
+
+The name "John Ninja" will be entered as the name of the field which exists now.
+
+Program will find the recently modified field and asks the user confirmation if he/she is
+really willing to remove the file.
+
+/************************************/
+test 15: The "no" option would be chosen. No action would be done. The message "No record was
+removed." will be displayed follwed by the main menu waiting for the suer command.
+
+/************************************/
+test 16: "test 14" will be repetted followed by a "yes" answer to confrim the removing process.
+The record would be removed followed by this message for the user "The desrired record was deleted."
+
+The main menu would be displayed afreward.
+
+/************************************/
+test 17: The option "Print all contacs" is chosen here to see whether the signle record in the
+database has been really removed.
+
+The message "The list is empty" must be displayed followed by the main menu.
+
+
+/************************************/
+test 18: The add option is chosen and the neccessary fileds are entered by user. In this step
+five few records will be added. Each time any record is added, the option "Print all contacs" will
+bes used to confirm that the record is actually added to the list.
+
+The following sample records are used at this step.
+
+--------------------------
+Name: Ehsan Kourkchi
+Address: 2680 Woodlawn Dr
+Honolulu, HI 96822
+Yearofbirth: 1980
+Telno: (808) 220 6795
+--------------------------
+--------------------------
+Name: Sean Bolton
+Address: 1285 Aloha St.
+Hilo,
+Hawaii HI 18962
+Yearofbirth: 1984
+Telno: (808) 152 3684
+--------------------------
+--------------------------
+Name: Ehsan Kourkchi
+Address: 26, Reza Dousti Alley,
+Vahidiyeh St., Nezam Abad
+Tehran, Iran
+16436-73611
+Yearofbirth: 1979
+Telno: (307) 416 6375
+--------------------------
+--------------------------
+Name: Sarah McLauren
+Address: 6381, Grand Canyon Ave.,
+Washaki Center,
+Laramie, WY 16395 
+Yearofbirth: 1981
+Telno: (532) 123 8563
+--------------------------
+--------------------------
+Name: Francoise Holande
+Adress: 1365, Sean Loran St.,
+Molin Rouge, 
+Paris, France
+1985634
+Yearofbirth: 2002
+Telno: +91 326 785362 365
+--------------------------
+
+The first and the second records have the same name field (i.e. "Ehsan Kourkchi"), in order to test "find" and "delete"
+functions.
+
+
+/************************************/
+test 19: Testing if the program can find multiple records with the same name field.
+The option "Print a contact" will be chosen in this step.
+
+Program asks user to enter the contact name that will be displayed.
+Enter "Ehsan Kourkchi" as the record name that would be displayed.
+
+Program finds two following records and display them.
+
+--------------------------
+Name: Ehsan Kourkchi
+Address: 2680 Woodlawn Dr
+Honolulu, HI 96822
+Yearofbirth: 1980
+Telno: (808) 220 6795
+--------------------------
+--------------------------
+Name: Ehsan Kourkchi
+Address: 26, Reza Dousti Alley,
+Vahidiyeh St., Nezam Abad
+Tehran, Iran
+16436-73611
+Yearofbirth: 1979
+Telno: (307) 416 6375
+--------------------------
+
+The main menu would be displayed asking the user to enter the command.
+
+/************************************/
+test 20: Testing if program is capable to remove the same records with the same name field.
+
+The option "Remove a contact" will be chosen in this step.
+
+Program asks user to enter the contact name that will be removed.
+Enter "Ehsan Kourkchi" as the record name that would be removed.
+
+Two records with field "Ehsan Kourkchi" would be displayed asking the user to confrim whether
+or not to remove the records.
+
+A: choose "no" and not confirm the removing. The program must show the main menu.
+B: Repeat the "test 20" again exactly with the same inout and choose "yes" to confirm the removing
+process.
+
+The program must remove these two records and infrom the user "2 records was removed". If more than
+two records waere the same, the exact number of the removed records must be displayed.
+
+Main menu is displayed waiting for the  user.
+
+
+/************************************/
+test 21: Testing if the removed records are actually removed.
+
+Choose the option "Print all contacts" to see the results.
+The following records must be displayed:
+
+--------------------------
+Name: Sean Bolton
+Address: 1285 Aloha St.
+Hilo,
+Hawaii HI 18962
+Yearofbirth: 1984
+Telno: (808) 152 3684
+--------------------------
+--------------------------
+Name: Sarah McLauren
+Address: 6381, Grand Canyon Ave.,
+Washaki Center,
+Laramie, WY 16395 
+Yearofbirth: 1981
+Telno: (532) 123 8563
+--------------------------
+--------------------------
+Name: Francoise Holande
+Adress: 1365, Sean Loran St.,
+Molin Rouge, 
+Paris, France
+1985634
+Yearofbirth: 2002
+Telno: +91 326 785362 365
+--------------------------
+
+The main menu of the program would be displayed.
+
+/************************************/
+test 22: Testing the reading and writing to a file. 
+
+Choose "Quit" option. The program must be ended with the following a message for user indicating
+that the databse has been saved.
+
+/************************************/
+test 23: Reopenning the program by typing:
+
+$ ./project1
+
+The program must be restarted and inform the user that there are "3" records available in the database.
+
+/************************************/
+test 24: Testing wether all records are loaeded by choosing "Print all contacts". The same records
+as what you got in "test 21" must be displayed.
+
+The main menu must be displayed at the end waiting for user to enter new command.
+
+/************************************/
+test 25: Removing a single record from a lsit with more than one record.
+
+Choose "Remove a contact" and enter "Sarah McLauren" as the name of the record that must be rmeoved.
+
+The following record must be displayed asking the user to confim the removing.
+
+--------------------------
+Name: Sarah McLauren
+Address: 6381, Grand Canyon Ave.,
+Washaki Center,
+Laramie, WY 16395 
+Yearofbirth: 1981
+Telno: (532) 123 8563
+--------------------------
+
+Confirm to remove the chosen record. Program will inform the user that "the record was successfully removed."
+and displays the manin menu afterward.
+
+/************************************/
+test 26: Choose "Print all records" to see wether the selcted record has been removed.
+The following records must be displayed:
+
+--------------------------
+Name: Sean Bolton
+Address: 1285 Aloha St.
+Hilo,
+Hawaii HI 18962
+Yearofbirth: 1984
+Telno: (808) 152 3684
+--------------------------
+--------------------------
+Name: Francoise Holande
+Adress: 1365, Sean Loran St.,
+Molin Rouge, 
+Paris, France
+1985634
+Yearofbirth: 2002
+Telno: +91 326 785362 365
+--------------------------
+
+The main menu would be displayed.
+
+
+/************************************/
+test 27: Search and print a single record in a list with more than one contact.
+Choose "Print a contact" and enter "Francoise Holande" as the name of the record that
+should be displayed.
+
+The following record must be displayed:
+
+--------------------------
+Name: Francoise Holande
+Adress: 1365, Sean Loran St.,
+Molin Rouge, 
+Paris, France
+1985634
+Yearofbirth: 2002
+Telno: +91 326 785362 365
+--------------------------
+
+The main menu would be displayed afterward.
+
+/************************************/
+test 28: Modify a record in a single record in a list with more than one contact. 
+Choose "Modify a contact" from the menu and enter "Foo" as the name which does not exist
+in the list.
+
+The program must warn the user that "there is no record with such name." and then displays the 
+main menu.
+
+
+/************************************/
+test 29: Modify a record in a single record in a list with more than one contact.
+Choose "Modify a contact" from the menu and enter "Francoise Holande" as the name of the record that
+should be modified.
+
+Enter all new fields and press enter. Use the following information for the modified record.
+
+--------------------------
+Name: Ehsan Kourkchi
+Address: 2680 Woodlawn Dr
+Honolulu, HI 96822
+Yearofbirth: 1980
+Telno: (808) 220 6795
+--------------------------
+
+The program must display a message indicating that the record was modified.
+
+/************************************/
+test 30: Choose "Print all contacts" to see wether the selected record is modified.
+
+The below information must be displayed followed by the main menu.
+
+--------------------------
+Name: Sean Bolton
+Address: 1285 Aloha St.
+Hilo,
+Hawaii HI 18962
+Yearofbirth: 1984
+Telno: (808) 152 3684
+--------------------------
+--------------------------
+Name: Ehsan Kourkchi
+Address: 2680 Woodlawn Dr
+Honolulu, HI 96822
+Yearofbirth: 1980
+Telno: (808) 220 6795
+--------------------------
+
+
+/************************************/
+test 31: Choose "Add a contact" and add the following contact
+
+--------------------------
+Name: Ehsan Kourkchi
+Address: 26, Reza Dousti Alley,
+Vahidiyeh St., Nezam Abad
+Tehran, Iran
+16436-73611
+Yearofbirth: 1979
+Telno: (307) 416 6375
+--------------------------
+
+From the main menu choose "Print all contacts" to se whether the enterred information is loaded 
+into the databse.
+
+The following records must be displayed:
+
+--------------------------
+Name: Sean Bolton
+Address: 1285 Aloha St.
+Hilo,
+Hawaii HI 18962
+Yearofbirth: 1984
+Telno: (808) 152 3684
+--------------------------
+--------------------------
+Name: Ehsan Kourkchi
+Address: 2680 Woodlawn Dr
+Honolulu, HI 96822
+Yearofbirth: 1980
+Telno: (808) 220 6795
+--------------------------
+--------------------------
+Name: Ehsan Kourkchi
+Address: 26, Reza Dousti Alley,
+Vahidiyeh St., Nezam Abad
+Tehran, Iran
+16436-73611
+Yearofbirth: 1979
+Telno: (307) 416 6375
+--------------------------
+
+The main menu must be displayed at the end. Please note that the second and third field
+have the same name field.
+
+
+/************************************/
+test 32: For modifying a record, user has to enter the name of the contact that would be modified.
+If multiple records has the same name field, the first record that have the entered name would
+be removed.
+
+Choose "Modify a contact" from the menu and enter "Ehsan Kourkchi" as the name.
+For the new information for the modifying record enter:
+
+--------------------------
+Name: Francoise Holande
+Adress: 1365, Sean Loran St.,
+Molin Rouge, 
+Paris, France
+1985634
+Yearofbirth: 2002
+Telno: +91 326 785362 365
+--------------------------
+
+The message "the record was modified" would be displayed. To confirm the modifying process choose 
+"Print all contacts". You must see that the first record is modified. So the following records 
+must be displayed:
+
+--------------------------
+Name: Sean Bolton
+Address: 1285 Aloha St.
+Hilo,
+Hawaii HI 18962
+Yearofbirth: 1984
+Telno: (808) 152 3684
+--------------------------
+--------------------------
+Name: Francoise Holande
+Adress: 1365, Sean Loran St.,
+Molin Rouge, 
+Paris, France
+1985634
+Yearofbirth: 2002
+Telno: +91 326 785362 365
+--------------------------
+--------------------------
+Name: Ehsan Kourkchi
+Address: 26, Reza Dousti Alley,
+Vahidiyeh St., Nezam Abad
+Tehran, Iran
+16436-73611
+Yearofbirth: 1979
+Telno: (307) 416 6375
+--------------------------
+
+/************************************/
+test 33: Choose "Quit" from the menu to exit the program. Rerun the program using 
+
+$ ./project1
+
+3 records must be loaded. Using "Remove a contact" three times, remove all the records. After 
+removing each record, use "Print all records" to confirm the removing process.
+
+
+/************************************/
+test 34: Start the program by typing the program name with "debug" argument
+
+$ ./project1 debug
+
+and go through all "test 3-33" steps again. At the end of each step before the
+main menu is displayed, the paramters that has been apssed to each function must be displayed.
+
+
+/************************************/
+test 35: Start the program by typing the program name with "-v" argument
+
+$ ./project1 -v
+
+The vesion of the program and the copyright (licensing) stuffs must be displayed.
+
+Example:
+
+   database
+   version: (ICS212) HW03
+   Copyright (C) 2013
+   Written by Ehsan Kourkchi
+   
+   
+   
+/************************************/
+THE END of testing process. 
+/************************************/

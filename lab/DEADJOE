@@ -1,0 +1,33 @@
+
+*** These modified files were found in JOE when it aborted on Wed Sep 25 18:20:53 2013
+*** JOE was aborted because the terminal closed
+
+*** File 'hello.c'
+# include <stdlib.h>
+
+int main(int argc, char *argv [ )
+{
+
+printf("Number of arguments: %d", argc);
+
+
+
+return 0;
+}
+
+
+
+
+
+*** File '(Unnamed)'
+ScanfTest.c
+ScanfTest.c
+ScanfTest.c
+hello.asm
+hello.asm
+/home/ehsan/.bashrc
+/home/ehsan/.bashrc
+hello.c
+hello.c
+hello.c
+hello.c

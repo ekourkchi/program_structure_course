@@ -1,0 +1,29 @@
+# /*****************************************************************
+# //
+# //  NAME:             Ehsan Kourkchi
+# //
+# //  HOMEWORK:         7
+# //
+# //  CLASS:            ICS 212
+# //
+# //  INSTRUCTOR:       Ravi Narayan
+# //
+# //  DATE:             October 24, 2013           
+# //
+# //  FILE:             Makefile1       
+# //
+# //  DESCRIPTION:      Makefile for "program1.cpp"
+# //
+# //****************************************************************/
+
+all: program1.o
+	  g++ -o program1  program1.o
+
+
+program1.o:  program1.cpp
+	  g++ -c program1.cpp
+
+.PHONY: clean
+
+clean:
+	  rm -f *.o

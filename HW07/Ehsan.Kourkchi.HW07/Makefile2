@@ -1,0 +1,32 @@
+# /*****************************************************************
+# //
+# //  NAME:             Ehsan Kourkchi
+# //
+# //  HOMEWORK:         7
+# //
+# //  CLASS:            ICS 212
+# //
+# //  INSTRUCTOR:       Ravi Narayan
+# //
+# //  DATE:             October 24, 2013           
+# //
+# //  FILE:             Makefile2        
+# //
+# //  DESCRIPTION:      Makefile for "program2.cpp"
+# //
+# //****************************************************************/
+
+all: program2.o costofpainting.o
+	  g++ -o program2  program2.o costofpainting.o
+
+
+costofpainting.o: costofpainting.cpp
+	  g++ -c costofpainting.cpp
+
+program2.o:  program2.cpp
+	  g++ -c program2.cpp
+
+.PHONY: clean
+
+clean:
+	  rm -f *.o

@@ -1,0 +1,12 @@
+#!/usr/bin/csh
+
+if ( ! -d src ) then
+  mkdir src
+endif
+
+cp ./*.c src/.
+cp ./*.h src/.
+cp ./makefile src/.
+cp ./Makefile src/.
+
+
